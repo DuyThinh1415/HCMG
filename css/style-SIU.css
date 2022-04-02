@@ -242,6 +242,7 @@ iframe {
   font-size: 20px;
   color: #555555;
   line-height: 1.2;
+  border-width: 0px;
 
   display: block;
   width: 100%;
