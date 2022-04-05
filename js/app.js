@@ -15,16 +15,6 @@
 			directionNav: false
 		});
 
-		$(".login-button").on("click",function(){
-			$(".overlay").fadeIn();
-			$(".auth-popup").toggleClass("active");
-		});
-
-		$(".close, .overlay").on("click",function(){
-			$(".overlay").fadeOut();
-			$(".popup").toggleClass("active");
-		});
-
 		initLightbox({
 	    	selector : '.product-images a',
 	    	overlay: true,
@@ -32,15 +22,24 @@
 	    	arrow: true
 	    });
 
+		/*$(".login-button").on("click",function(){
+			$(".overlay").fadeIn();
+			$(".auth-popup").toggleClass("active");
+		});*/
 
-		$(document).keyup(function(e) {
+		/*$(".close, .overlay").on("click",function(){
+			$(".overlay").fadeOut();
+			$(".popup").toggleClass("active");
+		});*/
+
+		/*$(document).keyup(function(e) {
 			if( $(".popup").hasClass("active")){
 		  		if (e.keyCode === 27) {
 		  			$(".overlay").fadeOut();
 					$(".popup").toggleClass("active");
 		  		}   
 			}
-		});
+		});*/
 	});
 
 	$(window).load(function(){
