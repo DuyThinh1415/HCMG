@@ -51,7 +51,9 @@ a:focus {
 
 a:hover {
 	text-decoration: none;
-  color: #fff;
+  /*color: rgb(233, 135, 135);*/
+  color: linear-gradient(left, #fa4299, #d41872,#a445b2 );
+  color: #d41872;
 }
 
 /*---------------------------------------------*/
