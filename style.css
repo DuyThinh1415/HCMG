@@ -2213,7 +2213,7 @@ form input[type="reset"]:focus {
 .site-header>.container {
   *zoom: 1;
   position: relative;
-  padding: 60px 15px 0;
+  padding: 20px 15px 0;
 }
 
 .site-header>.container:after {
@@ -2283,7 +2283,8 @@ form input[type="reset"]:focus {
 
 .main-navigation {
   *zoom: 1;
-  margin-top: 30px;
+  margin-top: 20px;
+  margin-bottom: 10px;
   position: relative;
   z-index: 999;
   clear: both;
@@ -2566,7 +2567,7 @@ form input[type="reset"]:focus {
 
 .home-slider .slide-content {
   float: left;
-  width: 40%;
+  width: 50%;
 }
 
 @media screen and (max-width: 768px) {
@@ -2601,6 +2602,8 @@ form input[type="reset"]:focus {
 
 .home-slider p {
   margin-bottom: 30px;
+  background-color: rgba(0, 0, 0, 0.278);
+  color: white;
 }
 
 .home-slider .slide-image {
@@ -2660,6 +2663,7 @@ form input[type="reset"]:focus {
   padding: 30px;
   border-radius: 3px;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+  height: 370px;
 }
 
 .product-list .product .inner-product a.button {
