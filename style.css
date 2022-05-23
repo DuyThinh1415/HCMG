@@ -2261,8 +2261,13 @@ form input[type="reset"]:focus {
   vertical-align: middle;
 }
 
+#branding .logo-text {
+  margin-top: 10px;
+}
+
 #branding .logo {
-  margin-right: 10px;
+  width: 10%;
+  height: 10%;
 }
 
 #branding .site-title {
@@ -2466,6 +2471,7 @@ form input[type="reset"]:focus {
 }
 
 .right-section {
+  margin-top: 40px;
   color: white;
 }
 
