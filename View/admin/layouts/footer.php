@@ -1,4 +1,4 @@
-<footer class="main-footer" style="background-color: rgb(70, 255, 70);">
+<footer class="main-footer" style="background-color: #21E6C1;">
     <strong>Copyright &copy; 2022 <a href="#">HCMG</a>.</strong>
     All rights reserved.
     <div class="float-right d-none d-sm-inline-block">
