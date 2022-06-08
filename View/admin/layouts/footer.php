@@ -1,5 +1,5 @@
 <footer class="main-footer" style="background-color: #1F4287;">
-    <strong style="color:white;">Copyright &copy; 2022 <a href="#">HCMG</a>.</strong>
+    <strong style="color:white;">Copyright &copy; 2022 <a href="../../index.html">HCMG</a>.</strong>
     <b style="color:white;">All rights reserved.</b>
     <div class="float-right d-none d-sm-inline-block">
       <b style="color:white;">Version 0.0.7</b>

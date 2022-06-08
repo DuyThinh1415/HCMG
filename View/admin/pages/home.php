@@ -23,10 +23,10 @@
 						<div class="inner">
 							<h3>7</h3>
 
-							<h4>Orders</h4>
+							<h4>Game Orders</h4>
 						</div>
 						<div class="icon">
-							<i class="ion ion-bag"></i>
+							<i class="ion ion-ios-game-controller-b"></i>
 						</div>
 						<a href="#" class="small-box-footer">Details   <i class="fas fa-arrow-circle-right"></i></a>
 					</div>
