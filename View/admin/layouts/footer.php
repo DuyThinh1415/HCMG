@@ -1,8 +1,8 @@
-<footer class="main-footer" style="background-color: #21E6C1;">
-    <strong>Copyright &copy; 2022 <a href="#">HCMG</a>.</strong>
-    All rights reserved.
+<footer class="main-footer" style="background-color: #1F4287;">
+    <strong style="color:white;">Copyright &copy; 2022 <a href="#">HCMG</a>.</strong>
+    <b style="color:white;">All rights reserved.</b>
     <div class="float-right d-none d-sm-inline-block">
-      <b>Version</b> 0.0.7
+      <b style="color:white;">Version 0.0.7</b>
   </div>
 </footer>
 

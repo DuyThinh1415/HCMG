@@ -33,17 +33,17 @@
     <div class="wrapper">
 
         <!-- Navbar -->
-        <nav class="main-header navbar navbar-expand navbar-white navbar-light" style="background-color: #21E6C1;">
+        <nav class="main-header navbar navbar-expand navbar-white navbar-light" style="background-color: #1F4287;">
             <!-- Left navbar links -->
             <ul class="navbar-nav">
                 <li class="nav-item">
                     <a class="nav-link" data-widget="pushmenu" href="#"><i class="fas fa-bars"></i></a>
                 </li>
                 <li class="nav-item d-none d-sm-inline-block">
-                    <a href="#" class="nav-link">Activities</a>
+                    <a href="#" class="nav-link" style="color:white;">Activities</a>
                 </li>
                 <li class="nav-item d-none d-sm-inline-block">
-                    <a href="#" class="nav-link">Feedbacks</a>
+                    <a href="#" class="nav-link" style="color:white;">Feedbacks</a>
                 </li>
             </ul>
 
