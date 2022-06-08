@@ -344,7 +344,7 @@ form input[type="submit"],
 form button,
 form input[type="reset"] {
   border: none;
-  background: #45b77d;
+  background: #336cdc;
   color: white;
   display: inline-block;
   padding: 10px;
@@ -357,8 +357,8 @@ form input[type="reset"] {
 form input.muted[type="submit"],
 form button.muted,
 form input.muted[type="reset"] {
-  background-color: #e5e5e5;
-  color: #898e90;
+  background-color: #066f9f;
+  color: #ffffff;
 }
 
 .button.muted:hover,
@@ -2361,7 +2361,7 @@ form input[type="reset"]:focus {
   padding: 30px 15px;
   font-size: 16px;
   font-size: 1.1428571429em;
-  color: #21e6c1;
+  color: #2921e6;
   position: relative;
   -webkit-transition: .3s ease;
   transition: .3s ease;
@@ -2393,7 +2393,7 @@ form input[type="reset"]:focus {
 
 .main-navigation>.menu li.current-menu-item a,
 .main-navigation>.menu li:hover a {
-  color: #45b77d;
+  color: #2921e6;
   border-bottom: 2px solid #45b77d;
 }
 
