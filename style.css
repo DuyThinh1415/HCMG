@@ -2361,7 +2361,7 @@ form input[type="reset"]:focus {
   padding: 30px 15px;
   font-size: 16px;
   font-size: 1.1428571429em;
-  color: #666a6c;
+  color: #21e6c1;
   position: relative;
   -webkit-transition: .3s ease;
   transition: .3s ease;
@@ -2665,7 +2665,7 @@ form input[type="reset"]:focus {
 }
 
 .product-list .product .inner-product {
-  background: white;
+  background: rgb(31, 66, 135);
   padding: 30px;
   border-radius: 3px;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
@@ -2709,14 +2709,14 @@ form input[type="reset"]:focus {
 .product-list .product .product-title {
   font-size: 18px;
   font-size: 1.2857142857em;
-  color: #666a6c;
+  color: #21e6c1;
   margin: 0;
   text-align: left;
   font-weight: 400;
 }
 
 .product-list .product .product-title a {
-  color: #666a6c;
+  color: #ffffff;
   -webkit-transition: .3s ease;
   transition: .3s ease;
 }
@@ -2770,7 +2770,7 @@ section header .section-title {
 
 section header .all {
   float: right;
-  color: #666a6c;
+  color: #21e6c1;
 }
 
 .page {
