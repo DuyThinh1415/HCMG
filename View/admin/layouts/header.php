@@ -210,59 +210,84 @@
                         <li class="nav-item has-treeview">
                             <a href="#" class="nav-link">
                             &nbsp;
+                                <i class="ion ion-person"></i>
+                                <p>
+                                &ensp; Admin Members
+                                    <i class="fas fa-angle-left right"></i>
+                                    <span class="badge badge-info right">4</span>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Add</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Lists</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item has-treeview">
+                            <a href="#" class="nav-link">
+                            &nbsp;
+                                <i class="ion ion-person-stalker"></i>
+                                <p>
+                                &ensp; Users
+                                    <i class="fas fa-angle-left right"></i>
+                                    <span class="badge badge-info right">7</span>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Add</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Lists</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item has-treeview">
+                            <a href="#" class="nav-link">
+                            &nbsp;
+                                <i class="ion ion-chatbubble-working"></i>
+                                <p>
+                                &ensp; Feedbacks
+                                    <i class="fas fa-angle-left right"></i>
+                                    <span class="badge badge-info right">7</span>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Add</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Lists</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item has-treeview">
+                            <a href="#" class="nav-link">
+                            &nbsp;
                                 <i class="ion ion-stats-bars"></i>
                                 <p>
                                 &ensp; Statistics
-                                    <i class="fas fa-angle-left right"></i>
-                                    <span class="badge badge-info right">7</span>
-                                </p>
-                            </a>
-                            <ul class="nav nav-treeview">
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Add</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Lists</p>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item has-treeview">
-                            <a href="#" class="nav-link">
-                            &nbsp;
-                                <i class="ion ion-person"></i>
-                                <p>
-                                &ensp; Customers
-                                    <i class="fas fa-angle-left right"></i>
-                                    <span class="badge badge-info right">7</span>
-                                </p>
-                            </a>
-                            <ul class="nav nav-treeview">
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Add</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Lists</p>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item has-treeview">
-                            <a href="#" class="nav-link">
-                            &nbsp;
-                                <i class="ion ion-pie-graph"></i>
-                                <p>
-                                &ensp; Ratings
                                     <i class="fas fa-angle-left right"></i>
                                     <span class="badge badge-info right">7</span>
                                 </p>

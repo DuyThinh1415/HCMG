@@ -36,39 +36,9 @@
 					<!-- small box -->
 					<div class="small-box bg-success">
 						<div class="inner">
-							<h3>77<sup style="font-size: 20px">%</sup></h3>
+							<h3>4<sup style="font-size: 20px"></sup></h3>
 
-							<h4>Statistics</h4>
-						</div>
-						<div class="icon">
-							<i class="ion ion-stats-bars"></i>
-						</div>
-						<a href="#" class="small-box-footer">Details   <i class="fas fa-arrow-circle-right"></i></a>
-					</div>
-				</div>
-				<!-- ./col -->
-				<div class="col-lg-3 col-6">
-					<!-- small box -->
-					<div class="small-box bg-primary">
-						<div class="inner">
-							<h3>7</h3>
-
-							<h4>Contacts</h4>
-						</div>
-						<div class="icon">
-							<i class="ion ion-chatbubble-working"></i>
-						</div>
-						<a href="#" class="small-box-footer">Details   <i class="fas fa-arrow-circle-right"></i></a>
-					</div>
-				</div>
-				<!-- ./col -->
-				<div class="col-lg-3 col-6">
-					<!-- small box -->
-					<div class="small-box bg-warning">
-						<div class="inner">
-							<h3>777</h3>
-
-							<h4 style="color: #fff">Customers</h4>
+							<h4>Admin Members</h4>
 						</div>
 						<div class="icon">
 							<i class="ion ion-person"></i>
@@ -79,14 +49,44 @@
 				<!-- ./col -->
 				<div class="col-lg-3 col-6">
 					<!-- small box -->
-					<div class="small-box bg-danger">
+					<div class="small-box bg-primary">
 						<div class="inner">
-							<h3>65</h3>
+							<h3>5</h3>
 
-							<h4>Ratings</h4>
+							<h4>Users</h4>
 						</div>
 						<div class="icon">
-							<i class="ion ion-pie-graph"></i>
+							<i class="ion ion-person-stalker"></i>
+						</div>
+						<a href="#" class="small-box-footer">Details   <i class="fas fa-arrow-circle-right"></i></a>
+					</div>
+				</div>
+				<!-- ./col -->
+				<div class="col-lg-3 col-6">
+					<!-- small box -->
+					<div class="small-box bg-warning">
+						<div class="inner">
+							<h3>1</h3>
+
+							<h4 style="color: #fff">Feedbacks</h4>
+						</div>
+						<div class="icon">
+							<i class="ion ion-chatbubble-working"></i>
+						</div>
+						<a href="#" class="small-box-footer">Details   <i class="fas fa-arrow-circle-right"></i></a>
+					</div>
+				</div>
+				<!-- ./col -->
+				<div class="col-lg-3 col-6">
+					<!-- small box -->
+					<div class="small-box bg-danger">
+						<div class="inner">
+						<h3>77<sup style="font-size: 20px">%</sup></h3>
+
+							<h4>Statistics</h4>
+						</div>
+						<div class="icon">
+							<i class="ion ion-stats-bars"></i>
 						</div>
 						<a href="#" class="small-box-footer">Details   <i class="fas fa-arrow-circle-right"></i></a>
 					</div>
