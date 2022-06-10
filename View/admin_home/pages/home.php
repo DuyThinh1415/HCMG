@@ -7,7 +7,7 @@
 				</div><!-- /.col -->
 				<div class="col-sm-6">
 					<ol class="breadcrumb float-sm-right">
-						<li class="breadcrumb-item"><a href="#">Home</a></li>
+						<li class="breadcrumb-item"><a href="../../View/Admin_home">Home</a></li>
 						<li class="breadcrumb-item active">HCMG Admin</li>
 					</ol>
 				</div>
@@ -43,7 +43,7 @@
 						<div class="icon">
 							<i class="ion ion-person"></i>
 						</div>
-						<a href="#" class="small-box-footer">Details   <i class="fas fa-arrow-circle-right"></i></a>
+						<a href="../../View/Admin_members" class="small-box-footer">Details   <i class="fas fa-arrow-circle-right"></i></a>
 					</div>
 				</div>
 				<!-- ./col -->

@@ -15,62 +15,106 @@
         </div>
     </section>
     <section>
-        <div class="col-12">
-            <div class="card">
-                <!-- /.card-header -->
-                <div class="card-body">
-                    <div id="example2_wrapper" class="dataTables_wrapper dt-bootstrap4">
-                        <div class="row">
-                            <div class="col-sm-12 col-md-6"></div>
-                            <div class="col-sm-12 col-md-6"></div>
-                        </div>
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <table id="example2" class="table table-bordered table-hover dataTable" role="grid" aria-describedby="example2_info">
-                                    <thead>
-                                        <tr role="row">
-                                            <th class="sorting_asc" style="text-align: center;" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Rendering engine: activate to sort column descending">STT</th>
-                                            <th class="sorting" style="text-align: center;" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-label="Browser: activate to sort column ascending">Admin name</th>
-                                            <th style="text-align: center;" class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-label="Platform(s): activate to sort column ascending">Sửa</th>
-                                            <th style="text-align: center;" class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-label="Engine version: activate to sort column ascending">Xóa</th>
+        <!-- container -->
+    <div class="container">
 
-                                        </tr>
-                                    </thead>
-                                    <tbody>
+ <?php
+// include database connection
+include 'config/database.php';
 
-                                        <tr role="row" class="odd">
-                                            <td class="sorting_1" style="text-align: center;">1</td>
-                                            <td style="text-align: center;">Phạm Duy Quang</td>
-                                            <td style="text-align: center;">
-                                                <span class="badge bg-primary">
-                                                            <ion-icon name="create-outline"></ion-icon>
-                                                        </span>
+$action = isset($_GET['action']) ? $_GET['action'] : "";
 
-                                            </td>
-                                            <td style="text-align: center;">
-                                                <span class="badge bg-danger">
-                                                            <ion-icon name="trash-outline"></ion-icon>
-                                                        </span>
-                                            </td>
-                                        </tr>
+// if it was redirected from delete.php
+if($action=='deleted'){
+echo "<div class='alert alert-success'>Record was deleted.</div>";
+}
 
-                                    </tbody>
-                                    <tfoot>
-                                        <tr>
-                                            <th rowspan="1" colspan="1" style="text-align: center;">STT</th>
-                                            <th rowspan="1" colspan="1" style="text-align: center;">Admin name</th>
-                                            <th rowspan="1" colspan="1" style="text-align: center;">Sửa</th>
-                                            <th rowspan="1" colspan="1" style="text-align: center;">Xóa</th>
-                                        </tr>
-                                    </tfoot>
-                                </table>
-                            </div>
-                        </div>
+// select all data
+$query = "SELECT id, name, description, price FROM products ORDER BY id DESC";
+$stmt = $con->prepare($query);
+$stmt->execute();
 
-                    </div>
-                </div>
-                <!-- /.card-body -->
-            </div>
-        </div>
+// this is how to get number of rows returned
+$num = $stmt->rowCount();
+
+// link to create record form
+echo "<a href='create.php' class='btn btn-primary m-b-1em'>New Admin</a>";
+
+echo "<br> <br>";
+//check if more than 0 record found
+if($num>0){
+
+//start table
+echo "<table>";
+
+//creating our table heading
+echo "<tr>
+<th>ID</th>
+<th>Name</th>
+<th>Description</th>
+<th>Price</th>
+<th>Action</th>
+</tr>";
+
+// retrieve our table contents
+// fetch() is faster than fetchAll()
+// http://stackoverflow.com/questions/2770630/pdofetchall-vs-pdofetch-in-a-loop
+while ($row = $stmt->fetch(PDO::FETCH_ASSOC)){
+// extract row
+// this will make $row['firstname'] to
+// just $firstname only
+extract($row);
+
+// creating new table row per record
+echo "<tr>
+ <td>{$id}</td>
+ <td>{$name}</td>
+ <td class='description'>{$description}</td>
+ <td> $ {$price}</td>
+ <td>";
+     // read one record
+     echo "<a href='read_one.php?id={$id}' class='btn btn-info m-r-1em'>Informations</a>"; 
+    
+     // we will use this links on next part of this post
+     echo "<a href='update.php?id={$id}' class='btn btn-primary m-r-1em'>Edit</a>";
+
+     // we will use this links on next part of this post
+     echo "<a href='#' onclick='delete_user({$id});'  class='btn btn-danger'>Delete</a>";
+ echo "</td>";
+echo "</tr>";
+}
+
+// end table
+echo "</table>";
+
+
+}
+
+// if no records found
+else{
+echo "<div class='alert alert-danger'>No records found.</div>";
+}
+?>
+
+</div> <!-- end .container -->
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+<!-- Latest compiled and minified Bootstrap JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script type='text/javascript'>
+// confirm record deletion
+function delete_user (id) {
+
+var answer = confirm('Are you sure?');
+if (answer) {
+ // if user clicked ok,
+ // pass the id to delete.php and execute the delete query
+ window.location = 'delete.php?id=' + id;
+}
+}
+</script>
     </section>
 </div>

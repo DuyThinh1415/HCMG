@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="../../Public/admin/plugins/summernote/summernote-bs4.css">
     <!-- Google Font: Source Sans Pro -->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+    <link rel="stylesheet" href="Table.css">
 </head>
 
 <body class="hold-transition sidebar-mini layout-fixed">
@@ -151,7 +152,7 @@
         <!-- Main Sidebar Container -->
         <aside class="main-sidebar sidebar-dark-primary elevation-4" style="background-color: rgb(20, 20, 50);">
             <!-- Brand Logo -->
-            <a href="#" class="brand-link">
+            <a href="../../View/Admin_home" class="brand-link">
                 <img src="../../dummy/Logo.png" alt="HCMG Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
                 <span class="brand-text font-weight-light">HCMG Admin</span>
             </a>
@@ -174,7 +175,7 @@
                         <!-- Add icons to the links using the .nav-icon class
            with font-awesome or any other icon font library -->
                         <li class="nav-item has-treeview">
-                            <a href="index.php" class="nav-link">
+                            <a href="../../View/Admin_home" class="nav-link">
                             &nbsp;
                                 <i class="ion-home"></i>
                                 <p>
@@ -208,7 +209,7 @@
                             </ul>
                         </li>
                         <li class="nav-item has-treeview">
-                            <a href="index.php" class="nav-link active">
+                            <a href="../../View/Admin_members" class="nav-link active">
                             &nbsp;
                                 <i class="ion ion-person"></i>
                                 <p>
