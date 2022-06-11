@@ -8,11 +8,44 @@
  * Importing CSS Libraries
  *===========================================*/
 
+.hidden {
+  display: none !important;
+}
 
+.visible {
+  display: block;
+}
 
 .slides {
   display: flex;
   align-items: center;
+}
+
+#lib_asGuest, #empty_lib{
+  width: inherit;
+  height: 370px;
+  background-color: rgb(31, 66, 135);
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.8;
+}
+
+#empty_lib{
+  opacity: 0.6;
+}
+
+#empty_lib:hover{
+  opacity: 1;
+}
+
+h3.noti{  
+  font-size: 18px;
+  font-size: 1.2857142857em;
+  color: #ffffff;
+  margin: 0;
+  font-weight: 500 !important;
 }
 
 
