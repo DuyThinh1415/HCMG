@@ -5,7 +5,7 @@
 /*//////////////////////////////////////////////////////////////////
 [ FONT ]*/
 
-@font-face {
+/* @font-face {
   font-family: Ubuntu-Regular;
   src: url('../fonts/ubuntu/Ubuntu-Regular.ttf'); 
 }
@@ -13,7 +13,7 @@
 @font-face {
   font-family: Ubuntu-Bold;
   src: url('../fonts/ubuntu/Ubuntu-Bold.ttf'); 
-}
+} */
 
 
 
@@ -29,12 +29,10 @@
 
 body, html {
 	height: 100%;
-	font-family: Ubuntu-Regular, sans-serif;
 }
 
 /*---------------------------------------------*/
 a {
-	font-family: Ubuntu-Regular;
 	font-size: 14px;
 	line-height: 1.7;
 	color: #666666;
@@ -62,7 +60,6 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 p {
-	font-family: Ubuntu-Regular;
 	font-size: 14px;
 	line-height: 1.7;
 	color: #666666;
@@ -134,7 +131,6 @@ iframe {
 /*//////////////////////////////////////////////////////////////////
 [ Utility ]*/
 .txt1 {
-  font-family: Poppins-Regular;
   font-size: 13px;
   color: #e5e5e5;
   line-height: 1.5;
@@ -218,7 +214,6 @@ iframe {
 }
 
 .login100-form-title {
-  font-family: Ubuntu-Bold;
   font-size: 28px;
   color: #fff;
   line-height: 1.2;
@@ -240,7 +235,6 @@ iframe {
 }
 
 .input100 {
-  font-family: Ubuntu-Regular;
   font-size: 20px;
   color: #555555;
   line-height: 1.2;
@@ -349,7 +343,6 @@ iframe {
 }
 
 .login100-form-btn {
-  font-family: Ubuntu-Bold;
   font-size: 18px;
   color: #fff;
   line-height: 1.2;
@@ -434,7 +427,6 @@ iframe {
   right: 10px;
   pointer-events: none;
 
-  font-family: Ubuntu-Bold;
   color: #c80000;
   font-size: 13px;
   line-height: 1.4;
