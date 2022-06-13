@@ -12,8 +12,6 @@
 		<link href="fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
 		<link href="fonts/lineo-icon/style.css" rel="stylesheet" type="text/css">
 
-		<!-- Loading main css file -->
-			<link rel="stylesheet" type="text/css" href="style.css">
 		<!--===============================================================================================-->	
 			<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
 		<!--===============================================================================================-->
@@ -36,22 +34,19 @@
 			<link rel="stylesheet" type="text/css" href="css/util.css">
 			<link rel="stylesheet" type="text/css" href="css/style-SIU.css">
 		<!--===============================================================================================-->
+		<!-- Loading main css file -->
+			<link rel="stylesheet" type="text/css" href="style.css">
 		
-		<!--[if lt IE 9]>
-		<script src="js/ie-support/html5.js"></script>
-		<script src="js/ie-support/respond.js"></script>
-		<![endif]-->
-
 	</head>
     <body>
         <div id="site-content">
 			<div class="site-header">
 				<div class="container">
-					<a href="index.html" id="branding">
-						<img src="images/logo.png" alt="" class="logo">
+					<a class="nav-home" id="branding">
+						<img src="dummy/Logo.png" alt="" class="logo">
 						<div class="logo-text">
-							<h1 class="site-title">H.C.M.G</h1>
-							<small class="site-description">Game Store</small>
+							<h1 class="site-title">HCMG</h1>
+							<small class="site-description">Ho Chi Minh Gaming laptop store</small>
 						</div>
 					</a> <!-- #branding -->
 				</div> <!-- .container -->
@@ -64,18 +59,13 @@
 						<span class="login100-form-title p-b-41">
 							Account Sign Up
 						</span>
-						<form class="login100-form validate-form p-b-33 p-t-5">
+						<form id="signUp-form" class="login100-form validate-form p-b-33 p-t-5" method="post">
 		
 							<div class="wrap-input100 validate-input" data-validate = "Enter username">
 								<input class="input100" type="text" name="username" placeholder="User name">
 								<span class="focus-input100" data-placeholder="&#xe82a;"></span>
 							</div>
 
-							<div class="wrap-input100 validate-input" data-validate = "Enter email">
-								<input class="input100" type="email" name="email" placeholder="Email">
-								<span class="focus-input100" data-placeholder="&#xe818;"></span>
-							</div>
-		
 							<div class="wrap-input100 validate-input" data-validate="Enter password">
 								<input class="input100" type="password" name="pass" placeholder="Password">
 								<span class="focus-input100" data-placeholder="&#xe80f;"></span>
@@ -87,65 +77,39 @@
 							</div>
 		
 							<div class="container-login100-form-btn m-t-32">
-								<button class="login100-form-btn">
+								<button type="" id="btn-signUp" class="login100-form-btn">
 									Register
 								</button>
+								<span id="alert-signUp"></span>
 							</div>
 
 							<div class="container-login100-form-btn m-t-10">
-								<a href="sign-in.html">Already have an account? <u>Sign in here</u></a>
+								<a class="SIU-nav" href="sign-in.html">Already have an account? <span>Sign in here</span></a>
 							</div>
 		
 						</form>
 					</div>
 				</div>
 			</div>
-			
-		
-			<div id="dropDownSelect1"></div>
-			
-		<!--===============================================================================================-->
-			<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
-		<!--===============================================================================================-->
-			<script src="vendor/animsition/js/animsition.min.js"></script>
-		<!--===============================================================================================-->
-			<script src="vendor/bootstrap/js/popper.js"></script>
-			<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-		<!--===============================================================================================-->
-			<script src="vendor/select2/select2.min.js"></script>
-		<!--===============================================================================================-->
-			<script src="vendor/daterangepicker/moment.min.js"></script>
-			<script src="vendor/daterangepicker/daterangepicker.js"></script>
-		<!--===============================================================================================-->
-			<script src="vendor/countdowntime/countdowntime.js"></script>
-		<!--===============================================================================================-->
-			<script src="js/script-SIU.js"></script>
-			<!--End-->
 
-            <div class="site-footer bottom">
+            <div class="site-footer">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-2">
 							<div class="widget">
-								<h3 class="widget-title">Information</h3>
+								<h3 class="widget-title">Games</h3>
 								<ul class="no-bullet">
-									<li><a href="#">Site map</a></li>
-									<li><a href="#">About us</a></li>
-									<li><a href="#">FAQ</a></li>
-									<li><a href="#">Privacy Policy</a></li>
-									<li><a href="#">Contact</a></li>
+									<li><a href="#">PC Game</a></li>
+									<li><a href="about-us.html">Game News</a></li>
 								</ul>
 							</div> <!-- .widget -->
 						</div> <!-- column -->
 						<div class="col-md-2">
 							<div class="widget">
-								<h3 class="widget-title">Consumer Service</h3>
+								<h3 class="widget-title">Service</h3>
 								<ul class="no-bullet">
-									<li><a href="#">Secure</a></li>
-									<li><a href="#">Shipping &amp; Returns</a></li>
-									<li><a href="#">Shipping</a></li>
-									<li><a href="#">Orders &amp; Returns</a></li>
-									<li><a href="#">Group Sales</a></li>
+									<li><a href="#">Refund</a></li>
+									<li><a href="#">About us</a></li>
 								</ul>
 							</div> <!-- .widget -->
 						</div> <!-- column -->
@@ -153,58 +117,34 @@
 							<div class="widget">
 								<h3 class="widget-title">My Account</h3>
 								<ul class="no-bullet">
-									<li><a href="#">Login/Register</a></li>
-									<li><a href="#">Settings</a></li>
-									<li><a href="#">Cart</a></li>
-									<li><a href="#">Order Tracking</a></li>
-									<li><a href="#">Logout</a></li>
+									<div class="panel-user hidden">
+										<li><a href="#">Setting</li>
+										<li><a href="#">Cart</a></li>
+										<li><a href="#" class="btn-logOut">Logout</a></li>
+									</div>
+									<div class="panel-guest">
+										<li><a href="sign-in.html">Sign in</li>
+										<li><a href="sign-up.html">Sign up</a></li>
+									</div>
 								</ul>
 							</div> <!-- .widget -->
 						</div> <!-- column -->
-						<div class="col-md-6">
-							<div class="widget">
-								<h3 class="widget-title">Join our newsletter</h3>
-								<form action="#" class="newsletter-form">
-									<input type="text" placeholder="Enter your email...">
-									<input type="submit" value="Subsribe">
-								</form>
-							</div> <!-- .widget -->
-						</div> <!-- column -->
+						<div class="col-md-3"></div>
+						<div class="col-md-3">
+							<div class="colophon">
+									<div class="copy">Copyright &copy; 2022 HCMG. All rights reserved.</div>
+							</div> <!-- .colophon -->
+						</div>
 					</div><!-- .row -->
-
-					<div class="colophon">
-						<div class="copy">Copyright 2014 Company name. Designed by Themezy. All rights reserved.</div>
-						<div class="social-links square">
-							<a href="#"><i class="fa fa-facebook"></i></a>
-							<a href="#"><i class="fa fa-twitter"></i></a>
-							<a href="#"><i class="fa fa-google-plus"></i></a>
-							<a href="#"><i class="fa fa-pinterest"></i></a>
-						</div> <!-- .social-links -->
-					</div> <!-- .colophon -->
 				</div> <!-- .container -->
 			</div> <!-- .site-footer -->
-
-            <div class="auth-popup popup">
-			<a href="#" class="close"><i class="fa fa-close"></i></a>
-			<div class="row">
-				<div class="col-md-6">
-					<h2 class="section-title">Login</h2>
-					<form action="#">
-						<input type="text" placeholder="Username...">
-						<input type="password" placeholder="Password...">
-						<input type="submit" value="Login">
-					</form>
-				</div> <!-- .column -->
-				<div class="col-md-6">
-					<h2 class="section-title">Create an account</h2>
-					<form action="#">
-						<input type="text" placeholder="Username...">
-						<input type="text" placeholder="Email address...">
-						<input type="submit" value="register">
-					</form>
-				</div> <!-- .column -->
-			</div> <!-- .row -->
-		</div> <!-- .auth-popup -->
         </div>
     </body>
+	
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+	<script src="js/plugins.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/function.js"></script>
 </html>
