@@ -2300,6 +2300,21 @@ form input[type="reset"]:focus {
   margin-top: 10px;
 }
 
+#branding .logo-text:hover{
+  color: #fff;
+  text-shadow:
+    /* White glow */
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    /* Green glow */
+    0 0 42px #21e6c1,
+    0 0 82px #21e6c1,
+    0 0 92px #21e6c1,
+    0 0 102px #21e6c1,
+    0 0 151px #21e6c1;
+}
+
 #branding .logo {
   width: 10%;
   height: 10%;
@@ -2487,7 +2502,18 @@ form input[type="reset"]:focus {
 }
 
 .right-section a:hover {
-  color: #21E6C1;
+  color: #fff;
+  text-shadow:
+    /* White glow */
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    /* Green glow */
+    0 0 42px #21e6c1,
+    0 0 82px #21e6c1,
+    0 0 92px #21e6c1,
+    0 0 102px #21e6c1,
+    0 0 151px #21e6c1;
 }
 
 .breadcrumbs {
@@ -2559,7 +2585,7 @@ form input[type="reset"]:focus {
 }
 
 .home-slider .flex-control-nav li a.flex-active {
-  background-color: #45b77d;
+  background-color: #21E6C1;
 }
 
 .home-slider .slide-content {
@@ -2592,7 +2618,7 @@ form input[type="reset"]:focus {
 .home-slider .slide-subtitle {
   font-size: 24px;
   font-size: 1.7142857143em;
-  color: #45b77d;
+  color: #21E6C1;
   margin-bottom: 30px;
   display: block;
 }
@@ -2778,7 +2804,7 @@ section header .all {
 .page .price {
   font-size: 30px;
   font-size: 2.1428571429em;
-  color: #45b77d;
+  color: #21E6C1;
   display: block;
   margin-bottom: 30px;
 }
@@ -2866,7 +2892,7 @@ section header .all {
 
 .page ul,
 .page ol {
-  border-left: 3px solid #45b77d;
+  border-left: 3px solid #1f4287;
   padding-left: 30px;
   margin-left: 30px;
   margin: 30px 0 30px 30px;
@@ -2981,7 +3007,7 @@ table.cart .fa-times {
 }
 
 .cart-total .total .num {
-  color: #45b77d;
+  color: #1f4287;
   font-weight: 700;
   margin-left: 20px;
 }
