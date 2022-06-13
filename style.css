@@ -7,18 +7,30 @@
 /*=========================================== 
  * Importing CSS Libraries
  *===========================================*/
-
-.hidden {
-  display: none !important;
+ 
+html{
+  visibility: hidden;
 }
 
-.visible {
-  display: block;
+.hide{
+  display: none !important;
 }
 
 .slides {
   display: flex;
   align-items: center;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.icon-knight {
+  color: #21E6C1;  
+  font-size: 18px;
+  font-size: 1.2857142857em;
+  margin-right: 5px;
+  vertical-align: baseline;
 }
 
 #lib_asGuest, #empty_lib{
@@ -48,7 +60,19 @@ h3.noti{
   font-weight: 500 !important;
 }
 
+.isPurchased{
+  background-color: #ffffff !important;
+  color: #336cdc !important;
+  cursor: not-allowed;
+  pointer-events: none;
+  font-weight: 400 !important;
+}
 
+h2, p{
+  color: #ffffff;
+}
+/*============================================
+*/
 /*============================================
 */
 article,
@@ -338,7 +362,7 @@ ol {
 
 a {
   text-decoration: none;
-  color: #45b77d;
+  color: #ffffff;
 }
 
 address {
@@ -402,7 +426,7 @@ form input.muted[type="reset"]:hover,
 form input.muted[type="submit"]:focus,
 form button.muted:focus,
 form input.muted[type="reset"]:focus {
-  background-color: #cccccc;
+  background-color: #e9dcdc;
 }
 
 .button:hover,
@@ -413,7 +437,8 @@ form input[type="reset"]:hover,
 form input[type="submit"]:focus,
 form button:focus,
 form input[type="reset"]:focus {
-  background-color: #69c697;
+  background-color: #ffffff;
+  color:rgb(31, 66, 135);
 }
 
 .no-bullet {
@@ -617,29 +642,6 @@ form input[type="reset"]:focus {
 .pagination-bar .pagination span.current {
   background-color: #45b77d;
   color: white;
-}
-
-.feature {
-  background: white;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 3px;
-  text-align: center;
-  padding: 30px;
-  margin-bottom: 30px;
-}
-
-.feature .feature-icon {
-  font-size: 48px;
-  font-size: 3.4285714286em;
-  color: #45b77d;
-  margin-bottom: 20px;
-}
-
-.feature .feature-title {
-  color: #45b77d;
-  font-size: 30px;
-  font-size: 2.1428571429em;
-  font-weight: 100;
 }
 
 /* IMAGE LIGHTBOX SELECTOR */
@@ -2239,7 +2241,7 @@ form input[type="reset"]:focus {
  * Header Styles
  */
 .site-header {
-  background-color: #2b2b2b;
+  background-color: #021226;
   position: relative;
 }
 
@@ -2265,7 +2267,7 @@ form input[type="reset"]:focus {
 }
 
 .site-header .cart .icon-cart {
-  color: #45b77d;
+  color: #21E6C1;
   font-size: 18px;
   font-size: 1.2857142857em;
   margin-right: 5px;
@@ -2273,7 +2275,7 @@ form input[type="reset"]:focus {
 }
 
 .site-header .cart:hover {
-  color: #45b77d;
+  color: #21E6C1;
 }
 
 @media screen and (max-width: 480px) {
@@ -2394,7 +2396,8 @@ form input[type="reset"]:focus {
   padding: 30px 15px;
   font-size: 16px;
   font-size: 1.1428571429em;
-  color: #2921e6;
+  color: #1f4287;
+  font-weight: 400;
   position: relative;
   -webkit-transition: .3s ease;
   transition: .3s ease;
@@ -2426,8 +2429,9 @@ form input[type="reset"]:focus {
 
 .main-navigation>.menu li.current-menu-item a,
 .main-navigation>.menu li:hover a {
-  color: #2921e6;
-  border-bottom: 2px solid #45b77d;
+  color: #1f4287;
+  font-weight: 400;
+  border-bottom: 2px solid #1f4287;
 }
 
 .mobile-navigation {
@@ -2457,52 +2461,6 @@ form input[type="reset"]:focus {
   display: block;
 }
 
-.search-form {
-  float: right;
-  position: absolute;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  width: 300px;
-}
-
-@media screen and (max-width: 480px) {
-  .search-form {
-    width: 200px;
-  }
-}
-
-.search-form label {
-  position: absolute;
-  left: 0;
-  color: #898e90;
-  z-index: 1;
-  top: 35px;
-  left: 20px;
-}
-
-.search-form input {
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 100%;
-  bottom: 0;
-  outline: none;
-  padding-left: 50px;
-  background: #eeeeee;
-  border: none;
-  border-top-right-radius: 3px;
-  border-bottom-right-radius: 3px;
-  box-shadow: inset 1px 0 2px rgba(0, 0, 0, 0.2);
-  -webkit-transition: .3s ease;
-  transition: .3s ease;
-}
-
-.search-form input:hover,
-.search-form input:focus {
-  background-color: white;
-}
-
 .right-section {
   margin-top: 40px;
   color: white;
@@ -2529,7 +2487,7 @@ form input[type="reset"]:focus {
 }
 
 .right-section a:hover {
-  color: #45b77d;
+  color: #21E6C1;
 }
 
 .breadcrumbs {
@@ -2551,7 +2509,7 @@ form input[type="reset"]:focus {
   position: relative;
   /* margin-top: -40px; */
   margin-bottom: 30px;
-  background: #2b2b2b;
+  background: #021226;
 }
 
 .home-slider .slides {
@@ -2755,11 +2713,11 @@ form input[type="reset"]:focus {
 }
 
 .product-list .product .product-title a:hover {
-  color: #45b77d;
+  color: #21E6C1;
 }
 
 .product-list .product .price {
-  color: #45b77d;
+  color: #21E6C1;
   font-size: 16px;
   font-size: 1.1428571429em;
   text-align: left;
@@ -3042,7 +3000,7 @@ form .cart-total input[type="reset"] {
  * Footer Styles
  */
 .site-footer {
-  background-color: #2b2b2b;
+  background-color: #021226;
   padding: 50px 0;
   font-size: 12px;
   font-size: 0.8571428571em;
@@ -3055,7 +3013,7 @@ form .cart-total input[type="reset"] {
 }
 
 .site-footer a:hover {
-  color: #45b77d;
+  color: #ffffff;
 }
 
 .site-footer .widget {
@@ -3103,19 +3061,20 @@ form .cart-total input[type="reset"] {
 
 .site-footer .newsletter-form input[type="text"]:hover,
 .site-footer .newsletter-form input[type="text"]:focus {
-  border-color: #45b77d;
+  border-color: rgb(31, 66, 135);
 }
 
 .site-footer .newsletter-form input[type="submit"] {
   width: 20%;
-  border: 2px solid #45b77d;
+  border: 2px solid rgb(31, 66, 135);
   -webkit-transition: .3s ease;
   transition: .3s ease;
 }
 
 .site-footer .newsletter-form input[type="submit"]:hover,
 .site-footer .newsletter-form input[type="submit"]:focus {
-  background-color: #69c697;
+  background-color: #ffffff;
+  color:rgb(31, 66, 135);
 }
 
 .site-footer .social-links a {

@@ -1,6 +1,6 @@
 (function($, document, window){
 	
-	$(document).ready(function(){
+	$(window).load(function(){
 
 		// Cloning main navigation for mobile menu
 		$(".mobile-navigation").append($(".main-navigation .menu").clone());
@@ -10,10 +10,11 @@
 			$(".mobile-navigation").slideToggle();
 		});
 
+		setTimeout(function(){
 		$(".home-slider").flexslider({
 			controlNav: true,
 			directionNav: false
-		});
+		});}, 50);
 
 		initLightbox({
 	    	selector : '.product-images a',
@@ -40,10 +41,6 @@
 		  		}   
 			}
 		});*/
-	});
-
-	$(window).load(function(){
-
 	});
 
 })(jQuery, document, window);
