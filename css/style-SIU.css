@@ -7,6 +7,10 @@
   text-decoration: underline;
 }
 
+small {
+  color: #fff !important;
+}
+
 /*---------------------------------------------*/
 input {
 	outline: none;
@@ -123,7 +127,6 @@ iframe {
 
 /*------------------------------------------------------------------
 [ Form ]*/
-
 .login100-form {
   width: 100%;
   border-radius: 3px;
@@ -140,10 +143,8 @@ iframe {
   display: block;
 }
 
-
 /*------------------------------------------------------------------
 [ Input ]*/
-
 .wrap-input100 {
   width: 100%;
   position: relative;
@@ -276,14 +277,9 @@ iframe {
   background: #071e3d;
   position: relative;
   z-index: 1;
-
-  -webkit-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-  transition: all 0.4s;
 }
 
-.login100-form-btn:hover {
+.login100-form-btn:hover, .login100-form-btn:active{
   color: #071e3d;
   background-color: #fff;
   border: #071e3d 2px solid;
