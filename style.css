@@ -8,10 +8,6 @@
  * Importing CSS Libraries
  *===========================================*/
  
-html{
-  visibility: hidden;
-}
-
 .hide{
   display: none !important;
 }
