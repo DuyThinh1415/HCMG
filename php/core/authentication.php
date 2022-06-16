@@ -126,32 +126,14 @@ class Authentication{
         $stmt->bindParam(':name', $this->User_name);
         
         //execute the query
-        if($stmt->execute()){
-            $lastId = $this->lastUser();
-            $query = 'UPDATE ' . $this->table . ' SET User_id=:id WHERE User_id=:lastId';
-            $stmt = $this->conn->prepare($query);
-            $stmt->bindParam(':id', $id);
-            $stmt->bindParam(':lastId', $lastId);
-            if($stmt->execute()) return true;
-            return false;
-        }
-        return false;
+        return ($stmt->execute());
     }
 
     public function deleteUser($id){
         $query = 'DELETE FROM ' . $this->table . ' WHERE User_id=:id';
         $stmt = $this->conn->prepare($query);
         $stmt->bindParam(':id', $id);
-        if($stmt->execute()){
-            $lastId = $this->lastUser();
-            $query = 'UPDATE ' . $this->table . ' SET User_id=:id WHERE User_id=:lastId';
-            $stmt = $this->conn->prepare($query);
-            $stmt->bindParam(':id', $id);
-            $stmt->bindParam(':lastId', $lastId);
-            if($stmt->execute()) return true;
-            return false;
-        }
-        return false;
+        return ($stmt->execute());
     }
 }
 

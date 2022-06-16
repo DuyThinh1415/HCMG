@@ -12,16 +12,12 @@
 
     //set User_id and get all Product_id in this user library
     $user->User_id = $_POST['User_id'];
-    $user->get_gameLib();
+    $checker = 'is-free';
 
-    //Check $_POST['Product_id'] is existed in user's library
-    $checker = false;
-    foreach ($user->gameLib as $item){
-        if ($item['Product_id'] == $_POST['Product_id']){
-            $checker = true;
-            break;
-        }
-    }
+    //echo $_POST['Product_id']."+".$user->check_itemInCart($_POST['Product_id'])."+".$user->check_itemInLib($_POST['Product_id']);
+
+    if ($user->check_itemInCart($_POST['Product_id']) == true) $checker = 'in-cart';
+    else if ($user->check_itemInLib($_POST['Product_id']) == true) $checker = 'owned';
 
     echo json_encode(array('checker' => $checker));
 ?>

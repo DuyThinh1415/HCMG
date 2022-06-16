@@ -114,42 +114,114 @@ class User{
 
     //save log when purchasing event happend
     public function savePurchaseLog(){
-        if ($this->get_cart() && count($this->cart)){
-            foreach($this->cart as $item){
-                //create query
-                $query = 'INSERT INTO ' . $this->tableLibrary . 
-                ' SET User_id = :user_id, Product_id = :prod_id';
-
-                //prepare statement
-                $stmt = $this->conn->prepare($query);
-
-                //binding of param
-                $stmt->bindParam(':user_id', $this->User_id);
-                $stmt->bindParam(':prod_id', $item['Product_id']);
-            }
-
-            $currDate = date("Y-m-d H:i:s");
-            $query = 'INSERT INTO ' . $this->tablePurchaseLog . 
-                ' SET User_id = :user_id, Time = :purchaseTime';
+        foreach($this->cart as $item){
+            //create query
+            $query = 'INSERT INTO ' . $this->tableLibrary . 
+            ' SET User_id = :user_id, Product_id = :prod_id';
 
             //prepare statement
             $stmt = $this->conn->prepare($query);
 
             //binding of param
             $stmt->bindParam(':user_id', $this->User_id);
-            $stmt->bindParam(':purchaseTime', $currDate);
+            $stmt->bindParam(':prod_id', $item['Product_id']);
 
-            //execute the query
-            if ($stmt->execute()) return true;
+            $stmt->execute();
+            $this->remove_cartItem($item['Product_id']);
+        }
 
-            //print error if sth goes wrong
-            printf("Error %s. \n", $stmt->error);
-            return false;
-        }
-        else{
-            printf("Not found any products to purchase");
-            return false;
-        }
+        $currDate = date("Y-m-d H:i:s");
+        $query = 'INSERT INTO ' . $this->tablePurchaseLog . 
+            ' SET User_id = :user_id, Time = :purchaseTime';
+
+        //prepare statement
+        $stmt = $this->conn->prepare($query);
+
+        //binding of param
+        $stmt->bindParam(':user_id', $this->User_id);
+        $stmt->bindParam(':purchaseTime', $currDate);
+
+        //execute the query
+        if ($stmt->execute()) return true;
+
+        //print error if sth goes wrong
+        printf("Error %s. \n", $stmt->error);
+        return false;
+    }
+
+    //add an item to cart with product_id
+    public function add_cartItem($Prod_id){
+        //create query
+        $query = 'INSERT INTO ' . $this->tableCart . 
+        ' SET User_id = :user_id, Product_id = :prod_id';
+
+        //prepare statement
+        $stmt = $this->conn->prepare($query);
+
+        //binding of param
+        $stmt->bindParam(':user_id', $this->User_id);
+        $stmt->bindParam(':prod_id', $Prod_id);
+
+        //execute stmt
+        return ($stmt->execute());
+    }
+
+    //remove an item from cart by product_id
+    public function remove_cartItem($Prod_id){
+        //create query
+        $query = 'DELETE 
+        FROM ' . $this->tableCart . 
+        ' WHERE User_id = :user_id AND Product_id = :prod_id';
+
+        //prepare statement
+        $stmt = $this->conn->prepare($query);
+
+        //binding of param
+        $stmt->bindParam(':user_id', $this->User_id);
+        $stmt->bindParam(':prod_id', $Prod_id);
+
+        //execute stmt
+        return ($stmt->execute());
+    }
+
+    //check product exist in cart
+    public function check_itemInCart($Prod_id){
+        //create query
+        $query = 'SELECT * 
+                FROM '.$this->tableCart.'
+                WHERE User_id = :user_id AND Product_id = :prod_id
+                LIMIT 1';
+
+        //prepare statement
+        $stmt = $this->conn->prepare($query);
+
+        //binding of param
+        $stmt->bindParam(':user_id', $this->User_id);
+        $stmt->bindParam(':prod_id', $Prod_id);
+
+        //execute stmt
+        $stmt->execute();
+        return (bool)$stmt->fetchColumn();
+    }
+
+    //check product exist in cart
+    public function check_itemInLib($Prod_id){
+        //create query
+        $query = 'SELECT * 
+                FROM '.$this->tableLibrary.'
+                WHERE User_id = :user_id AND Product_id = :prod_id
+                LIMIT 1';
+
+        //prepare statement
+        $stmt = $this->conn->prepare($query);
+
+        //binding of param
+        $stmt->bindParam(':user_id', $this->User_id);
+        $stmt->bindParam(':prod_id', $Prod_id);
+
+        //execute stmt
+        $stmt->execute();
+        return (bool)$stmt->fetchColumn();
     }
 }
 

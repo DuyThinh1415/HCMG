@@ -10,8 +10,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
 		
 		<!--===============================================================================================-->	
-		<link rel="icon" type="image/png" href="images/icons/about_us.ico"/> 
-		<title>HCMG | About Us</title>
+		<link rel="icon" type="image/png" href="images/icons/coming-soon.ico"/> 
+		<title>HCMG | Coming Soon</title>
 
 		<!-- Loading third party fonts -->
 		<link href="http://fonts.googleapis.com/css?family=Roboto:100,300,400,700|" rel="stylesheet" type="text/css">
@@ -64,72 +64,17 @@
 							<li class="menu-item"><a href="products.php">PC Game</a></li>
 							<li class="menu-item"><a href="coming-soon.php">Game News</a></li>
 							<li class="menu-item"><a href="coming-soon.php">Refund</a></li>
-							<li class="menu-item current-menu-item"><a href="about-us.php">About us</a></li>
+							<li class="menu-item"><a href="about-us.php">About us</a></li>
 						</ul> <!-- .menu -->
 						<div class="mobile-navigation"></div> <!-- .mobile-navigation -->
 					</div> <!-- .main-navigation -->
 				</div> <!-- .container -->
 			</div> <!-- .site-header -->
 
-			<main class="main-content" style="background-image: url('images/bg-about-us.jpg'); 
-  											background-repeat: no-repeat;
-											background-position: 50% 0;
-											background-size: cover;">
-				<div class="container">
-					<div class="page">
-						<div class="content">							
-							<h2>Access Games Instantly</h2>
-							<div class="row">
-								<div class="col-md-5 inner-content">
-									With nearly 30,000 games from AAA to indie and everything in-between. 
-									Enjoy exclusive deals, automatic game updates, and other great perks.
-								</div>
-							</div>
-						</div>
-						<div class="content">							
-							<h2>Purchases Made Easy</h2>
-							<div class="row">
-								<div class="col-md-5 inner-content">
-									Our storefront supports 100+ payment methods across over 35 currencies, 
-									giving you the flexibility to pay how you want.
-								</div>
-								<div class="col-md-6"></div>
-							</div>
-						</div>
-						<div class="content">							
-							<h2>Early Access to Games</h2>
-							<div class="row">
-								<div class="col-md-5 inner-content">
-									Discover, play, and get involved with games as they evolve. 
-									Be the first to see what's coming and become part of the process.
-								</div>
-								<div class="col-md-6"></div>
-							</div>
-						</div>
-						<div class="content">							
-							<h2>And so much more...</h2>
-							<div class="row">
-								<div class="col-md-5 inner-content">
-								Earn achievements, read reviews, explore custom recommendations, and more.
-								</div>
-								<div class="col-md-6"></div>
-							</div>
-						</div>
-						<div class="content">							
-							<h2>Contact</h2>
-							<div class="row">
-								<div class="col-md-5 inner-content">
-									H.C.M.G, Inc<br>
-									Address: 123 Road.<br>
-									Binh Duong, Vietnam.<br>
-									Tel: +84 123 456 7890<br>
-									Email: hcmg@gmail.com
-								</div>
-								<div class="col-md-6"></div>
-							</div>
-						</div>
-					</div>
-				</div> <!-- .container -->
+			<main class="main-content" style="background-color: #fff; opacity: 0.7;">
+                <div class="container"style="display: flex; justify-content: center;">
+                    <img src="images/bg-coming-soon.jpg" style="max-width:80%; height: auto; margin-bottom: 5% !important;"/>					
+                </div>                
 			</main> <!-- .main-content -->
 
 			<div class="site-footer">
